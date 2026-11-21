@@ -3,12 +3,12 @@ package me.jagar.chatvoiceplayerlibrary;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 
-public class PlayerVisualizerSeekbar extends android.support.v7.widget.AppCompatSeekBar{
+public class PlayerVisualizerSeekbar extends androidx.appcompat.widget.AppCompatSeekBar{
 
     /**
      * constant value for Height of the bar
@@ -166,3 +166,4 @@ public class PlayerVisualizerSeekbar extends android.support.v7.widget.AppCompat
         return (int) Math.ceil(getContext().getResources().getDisplayMetrics().density * value);
     }
 }
+
